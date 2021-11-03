@@ -17,7 +17,7 @@ function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
-  cb(n1, n2);
+  return cb(n1, n2);
 }
 
 function sumarArray(numeros, cb) {
@@ -25,10 +25,9 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  let res = null;
-  for ( let i = 0; i < numeros.length; i++ ) {
-    res += numeros[i];
-  }
+  let res = numeros.reduce( function( previousValue, currentValue ) {
+    return previousValue + currentValue;
+  } );
   cb(res);
 }
 
@@ -36,9 +35,9 @@ function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  for ( let i = 0; i < array.length; i++ ) {
-    cb(array[i]);
-  }
+  array.forEach( function( elemento ) {
+    cb(elemento);
+  } );
 }
 
 function map(array, cb) {
@@ -48,11 +47,13 @@ function map(array, cb) {
   //Tu código:
   let res = [];
   let a = null;
-  for ( let i = 0; i < array.length; i++ ) {
-    a = cb(array[i]);
-    res.push(a);
+  array.map( function( elemento ) {
+    a = cb( elemento );
+    res.push( a );
+  } );
+  if ( array.length === res.length ) {
+    return res;
   }
-  return res;
 }
 
 function filter(array) {
@@ -60,11 +61,11 @@ function filter(array) {
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
   let res = [];
-  for ( let i = 0; i < array.length; i++ ) {
-    if ( array[i].startsWith("a") ) {
-      res.push(array[i]);
+  array.forEach( function( elemento ) {
+    if ( elemento.startsWith( "a" ) ) {
+      res.push( elemento );
     }
-  }
+  } );
   return res;
 }
 
