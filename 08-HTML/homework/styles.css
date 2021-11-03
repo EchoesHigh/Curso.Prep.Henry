@@ -1,0 +1,46 @@
+body {
+    height: auto;
+    width: auto;
+    background-image: url("https://cdn.crello.com/api/media/medium/461172218/stock-photo-abstract-green-gradient-polygonal-background");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+h1 {
+    color: #081C15;
+}
+img {
+    width: 400px;
+}
+#thirdDiv {
+    height: 600px;
+    width: 500px;
+    background-color: #b7e4c736;
+    padding: 50px;
+    border: 2px dotted #081C15;
+    margin-top: 25px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+}
+li {
+    list-style: none;
+}
+.divClass {
+    color: #081C15;
+}
+a {
+    color: #D8F3DC;
+}
+ul {
+    padding: 0;
+    align-self: center;
+}
