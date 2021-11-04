@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Adrián Miranda CV</title>
+    <style>
+        body {
+            height: 100%;
+            background-image: url(./Fondo_cv.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h3 {
+            margin: 2% 0;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            column-gap: 10%;
+            font-size: 1.25vw;
+            color: white;
+        }
+        #titulo {
+            text-align: center;
+            margin-top: 0;
+            font-size: 2.2vw;
+            color: white;
+        }
+        section {
+            display: flex;
+        }
+        #content {
+            display: flex;
+            height: auto;
+        }
+        #left {
+            width: 25%;
+            margin-left: 20%;
+            flex-direction: column;
+            height: auto;
+            background-color: rgba(56, 87, 35, 0.451);
+            color: white;
+            border-top: 0;
+            border-bottom: 0;
+            border-left: 1.5vh;
+            border-right: 1.5vh;
+            border-style: solid;
+            border-color: rgba(56, 87, 35, 0);
+            border-radius: 2vh 0 0 2vh;
+        }
+        #right {
+            width: 75%;
+            margin-right: 20%;
+            flex-direction: column;
+            height: auto;
+            border-top: 1vh;
+            border-bottom: 1vh;
+            border-left: 0;
+            border-right: 0;
+            border-style: solid;
+            border-color: rgba(56, 87, 35, 0.5);
+            background-color: rgba(255, 255, 255, 0.6);
+            border-right: 2vh solid rgba(255, 255, 255, 0);
+        }
+        #left div {
+            margin: 10% 0;
+            font-size: 1.15vw;
+            padding-left: 5%;
+        }
+        #right div {
+            margin: 1% 0 1% 5%;
+            font-size: 1.15vw;
+        }
+        #left h1 {
+            font-style: italic;
+            font-size: 2.5vw;
+        }
+        #right div h1 {
+            padding-left: 5%;
+            color: #538135;
+        }
+        #address {
+            height: auto;
+        }
+        #skills {
+            height: auto;
+        }
+        #beliefs {
+            height: auto;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 5%;
+            padding-left: 0%;
+        }
+        #education {
+            height: 35%;
+        }
+        #portfolio {
+            height: 10%;
+        }
+        #work {
+            height: 42%;
+        }
+        #languages {
+            height: 13%;
+        }
+        #contento {
+            display: flex;
+            height: auto;
+        }
+        .left {
+            width: 25%;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+        }
+        .left p {
+            padding: 8% 0;
+        }
+        .right {
+            width: 75%;
+            height: auto;
+            flex-direction: column;
+            margin-right: 5%;
+        }
+        #work .right {
+            text-align: justify;
+        }
+        .right p {
+            margin-left: 2%;
+        }
+        .title {
+            font-weight: bolder;
+            margin-bottom: 0;
+        }
+        .gray {
+            font-weight: lighter;
+            color: rgb(102, 93, 93);
+            margin-top: 0;
+        }
+        .portfolio {
+            width: 100%;
+            text-align: center;
+            padding-right: 5%;
+        }
+        .content {
+            margin-top: 0;
+        }
+        #work .gray {
+            margin-bottom: 0;
+        }
+        #work .left p {
+            padding: 0;
+            align-content: stretch;
+            margin: 0 0 60% 0;
+        }
+        #languages .left p, #languages .right p {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>E-mail: adrian.arturo.miranda@gmail.com</p>
+        <p>Mobile: 55 6631 9266</p>
+    </header>
+    <div>
+        <h1 id="titulo">Adrián Arturo Miranda Rodríguez y Cos</h1>
+    </div>
+    <div id="content">
+        <section id="left">
+            <div id="address">
+                <h1>Address</h1>
+                <p>Coacalco de Berriozabal, Estado de México, México</p>
+            </div>
+            <div id="skills">
+                <h1>Skills</h1>
+                <ul>
+                    <li>Empathy</li>
+                    <li>Autodidact</li>
+                    <li>Problem solving</li>
+                    <li>JavaScript</li>
+                    <li>AngularJs</li>
+                    <li>ReactJs</li>
+                    <li>Python</li>
+                    <li>SCRUM</li>
+                    <li>Core Tools</li>
+                    <li>Analytic</li>
+                    <li>DMAIC</li>
+                </ul>
+            </div>
+            <div id="beliefs">
+                <h1>Personal Beliefs</h3>
+                <ul>
+                    <li>Quality in all of your work</li>
+                    <li>Step out of your comfort zone</li>
+                    <li>Push yourself to the limit</li>
+                    <li>Materialize your dreams</li>
+                    <li>Challenge yourself</li>
+                </ul>
+            </div>
+        </section>
+        <section id="right">
+            <div id="education">
+                <h1>Education</h1>
+                <div id="contento">
+                    <section class="left">
+                        <p>2019 - 2021</p>
+                        <p>2012 - 2015</p>
+                        <p>2015</p>
+                        <p>2014 - 2015</p>
+                    </section>
+                    <section class="right">
+                        <p class="title">Master in Project Management</p>
+                        <p class="gray">Universidad del Valle de México - HISPANO</p>
+                        <p class="title">Mechatronics Engineer</p>
+                        <p class="gray">Universidad del Valle de México - HISPANO</p>
+                        <p class="title">6 Months Academic Exchange</p>
+                        <p class="gray">Universidad Europea de Madrid</p>
+                        <p class="title">Global Business Management Certificate</p>
+                        <p class="gray">Walden University</p>
+                    </section>
+                </div>
+            </div>
+            <div id="portfolio">
+                <h1>Links</h3>
+                <div id="contento">
+                    <a class="portfolio" href="" target="_blank">Portfolio</a>
+                    <a class="portfolio" href="https://www.linkedin.com/in/adrianmirandar/" target="_blank">LinkedIn</a>
+                    <a class="portfolio" href="https://linktr.ee/EchoesHigh" target="_blank">Linktree</a>
+                </div>
+            </div>
+            <div id="work">
+                <h1>Work History</h1>
+                <div id="contento">
+                    <section class="left">
+                        <p>November 2018 - January 2021</pclass=>
+                        <p style="margin-top: 55%;">July 2016 - November 2018</p>
+                    </section>
+                    <section class="right">
+                        <p class="title">Project Quality Engineer</p>
+                        <p class="gray">Continental</p>
+                        <p class="content">Review & control of the manufacturing processes. Customer meetings. Statistical studies.
+                            Lead team meetings and ideas development, quality system review, documentation audit, SAP, 8D's, 
+                            Procedures and Control Plan review. Coordination of process transfer project from Germany to México.
+                        </p>
+                        <p class="title">Manufacturing/EOT Specialist</p>
+                        <p class="gray">Hella Automotive</p>
+                        <p class="content">EOT & PLC programming specialist, reviewing assembly lines stations (PokaYokes, Parameters), 
+                            AMEF, Layouts, OIS, Flow Diagrams, MSA statistical studies, release of new assembly lines, 
+                            failures and client claims analysis, SAP, staff instructor, Control Plan, Problem Solving, 8D's.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div id="languages">
+                <h1>Languages</h1>
+                <div id="contento">
+                    <section class="left">
+                        <p>English:</p>
+                        <p>Spanish:</p>
+                    </section>
+                    <section class="right">
+                        <p>85% TOEFL 590 Points (C1)</p>
+                        <p>100% Native language</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
